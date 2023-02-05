@@ -1,0 +1,72 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link StyleSheet File -->
+    <link rel="stylesheet" href="Style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <main>
+      <h1>Password Generator</h1>
+      <i class="fa-solid fa-copy"></i>
+      <div class="Show-Pass">
+        Generate to take a strong passcode
+      </div>
+      <div class="pass-length">
+        <h3>Password Length</h3>
+        <input
+          class="show-pass-length"
+          min="8"
+          value="8"
+          max="20"
+          type="number"
+        />
+      </div>
+      <div class="pass-rules">
+        <div class="upper">
+          <label class="upper-label" for="upper"
+            >Include Uppercase letters</label
+          >
+          <input class="checkbox upper-check" type="checkbox" id="upper" />
+        </div>
+
+        <div class="lower">
+          <label class="lower-label" for="lower"
+            >Include lowercase letters</label
+          >
+          <input class="checkbox lower-check" type="checkbox" id="lower" />
+        </div>
+
+        <div class="number">
+          <label class="number-label" for="number">Include numbers</label>
+          <input class="checkbox number-check" type="checkbox" id="number" />
+        </div>
+
+        <div class="symbols">
+          <label class="symbols-label" for="symbols">Include symbols</label>
+          <input class="checkbox symbols-check" type="checkbox" id="symbols" />
+        </div>
+      </div>
+      <div class="hint">If nothing is checked, that means everything is checked😜</div>
+      <div class="two-actions">
+        <button class="btn">Generate</button>
+        <!-- <button>Copy</button> -->
+      </div>
+    </main>
+    <!-- Link Js File -->
+    <script src="App.js"></script>
+  </body>
+</html>

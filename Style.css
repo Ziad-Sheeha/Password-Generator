@@ -1,0 +1,148 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(75, 166, 193);
+  background: linear-gradient(
+    90deg,
+    rgb(1, 72, 94) 35%,
+    rgba(4, 124, 161, 0.735) 100%
+  );
+}
+
+main {
+  position: relative;
+  margin: 20vh auto;
+  background-color: #454545;
+  width: 40rem;
+  height: 54vh;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.571);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.Show-Pass {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b7ee4;
+  height: 40px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.79);
+}
+
+.pass-length {
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pass-length h3 {
+  color: white;
+}
+
+.show-pass-length {
+  font-size: 15px;
+  background-color: #2b7ee4;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.pass-rules {
+  margin-top: 1rem;
+}
+
+.upper,
+.lower,
+.number,
+.symbols {
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 242, 0, 0.541);
+  transition: all 0.3s ease-in-out;
+}
+
+.checkbox {
+  border: none;
+  outline: none;
+  accent-color: rgb(67, 250, 6);
+  width: 18px;
+}
+
+.active {
+  color: rgb(67, 250, 6);
+}
+
+.two-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hint{
+  color: rgb(121, 121, 121);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.fa-copy{
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right:40px;
+  top: 6.2rem;
+}
+
+/* when already copied */
+.my-class{
+  transition: all .5s ease-in-out;
+  transform: translateY(-40px);
+  color: rgb(252, 252, 0);
+}
+
+.my-class::after{
+  content: "Copied!";
+  font-size: 8px;
+  position: absolute;
+  top: 45px;
+  letter-spacing: 2px;
+  right: -5px;
+  color: rgb(252, 252, 0);
+}
+
+
+button {
+  cursor: pointer;
+  width: 8rem;
+  color: white;
+  background-color: #2b7ee4;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #014874;
+}
